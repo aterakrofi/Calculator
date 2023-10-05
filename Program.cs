@@ -13,12 +13,9 @@ namespace CalculatorApp
         Console.WriteLine("------------------------\n");
             Calculator calculator = new Calculator();
 
-            int runtime = 0; //give me a variable??
             while (!endApp)
         {
-                int displayRuntime = runtime + 1;
-                    //int displayRuntime = calculator.Counter(runtime);
-                //use func to increment; return answer.
+                  
                 // Declare variables and set to empty.
                 string numInput1 = "";
             string numInput2 = "";
@@ -70,14 +67,8 @@ namespace CalculatorApp
             {
                 Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
             }
-
-
-                Console.WriteLine("This calculator was used {0} times.",runtime );
-              
-               int display =  calculator.Counter(displayRuntime);
-                display =runtime + 1;
-                Console.WriteLine("This calculator was used {0} times.", display);
-
+             
+                calculator.Counter();
                 //Print answer print.
                 Console.WriteLine("------------------------\n");
 
