@@ -27,10 +27,11 @@ namespace CalculatorLibrary
             writer.Close();
         }
 
-
-        public int Counter(int counter){
-            counter += 1;
-               return counter;
+        public static int count = 0;
+        public void Counter()
+        {
+            count += 1;
+            Console.WriteLine("This calculator was used {0} times.", count);
         }
         public double DoOperation(double num1, double num2, string op)
         {
